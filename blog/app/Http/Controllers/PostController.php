@@ -64,4 +64,9 @@ class PostController extends Controller
             "post"=> $post
         ]);
     }
+    public function ppp(){
+        return [
+          "message" => "hello"
+        ];
+    }
 }

@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 //Route::get('/home', 'HomeController@index');
 
 Route::get('/','PostController@index')->middleware('logined');
+Route::get('/ppp','PostController@ppp');
 Route::post('/post','PostController@store')->middleware('logined');
 Route::delete('/post/{post_id}','PostController@deletePost')->middleware('lead_post');
 Route::get('/post/{post_id}','PostController@postDetail')->middleware('lead_post');
